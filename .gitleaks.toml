@@ -1,0 +1,6 @@
+title = "Custom Rules"
+[[rules]]
+id = "generic-api-key"
+description = "Detect generic API keys"
+regex = '''(?i)(api[_-]?key|secret|token)[^a-zA-Z0-9]?[=:]["']?[a-z0-9_-]{16,}["']?'''
+secret_group = 1
