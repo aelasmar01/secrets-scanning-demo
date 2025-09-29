@@ -43,7 +43,7 @@ graph TD;
   A[Push Code to GitHub] --> B[GitHub Actions Workflow];
   B --> C[Run TruffleHog & Gitleaks];
   C -->|No Secrets| D[Workflow Passes ✅];
-  C -->|Secrets Found| E[Workflow Fails ❌ & Sends Discord Alert];
+  C -->|Secrets Found| E[Workflow Fails ❌ Sends Alert];
 ```
 
 ---
